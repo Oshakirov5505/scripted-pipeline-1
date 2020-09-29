@@ -8,6 +8,7 @@ properties([
 
 node{
     stage("Pull Repo"){
+        cleanWs()
         git branch: 'master', url: 'https://github.com/Oshakirov5505/scripted-pipeline-1.git'
     }
 
